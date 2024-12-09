@@ -1,7 +1,7 @@
 {
   "name": "car_store",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint": "npx eslint src --ignore-pattern '.js,.ts'",
@@ -10,10 +10,6 @@
     "build": "tsc",
     "start": "node dist/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -23,7 +19,8 @@
     "glob": "^11.0.0",
     "mongoose": "^8.8.2",
     "path": "^0.12.7",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "@vercel/node": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
