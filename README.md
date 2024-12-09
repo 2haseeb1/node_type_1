@@ -1,24 +1,27 @@
-## Car_Store API ##
+## Car_Store ##
 
 
 
-The **Car and Store** project is a car management system API which is developed  with **Node.js**, **Express.js**, and **MongoDB**. This project allows users to manage cars in a store with operations like creating a new car, retrieving a car's information, updating the data, and deleting a car from the database. In addition, it provides functionality to order cars, manage inventory, and calculate revenue from orders.
+The **Car_Store** project is a car management system API which is developed  with **Node.js**, **Express.js**, and **MongoDB**. This project allows users to manage cars in a store with operations like creating a new car, retrieving a car's information, updating the data, and deleting a car from the database. In addition, it provides functionality to order cars, manage inventory, and calculate revenue from orders.
 
 
 ---
 ```
-            car-and-store-api/
+            car_store
 ├── src/
+    ├──config/
+    ├──db.ts
+    ├──index.ts
 │   ├── features/
 │   │   ├── cars/                # Car feature directory
-│   │   │   ├── carModel.ts      # Mongoose schema for Car
-│   │   │   ├── carController.ts # Controller for handling car-related logic Business logic related to cars (e.g., create,Read, update, delete)
-│   │   │   ├── carRoutes.ts     # Car-related API routes
+│   │   │   ├── car.controller.ts      # Mongoose schema for Car
+│   │   │   ├── car.model.ts # Controller for handling car-related logic Business logic related to cars (e.g., create,Read, update, delete)
+│   │   │   ├── car.routes.ts     # Car-related API routes
 
 │   │   ├── orders/              # Order feature directory
-│   │   │   ├── orderModel.ts    # Mongoose schema for Order
-│   │   │   ├── orderController.ts # Controller for handling order-related logic and Business logic related to orders (e.g., creating orders, calculating revenue)
-│   │   │   ├── orderRoutes.ts   # Order-related API routes
+│   │   │   ├── order.model.ts    # Mongoose schema for Order
+│   │   │   ├── order.controller.ts # Controller for handling order-related logic and Business logic related to orders (e.g., creating orders, calculating revenue)
+│   │   │   ├── order.routes.ts   # Order-related API routes
 │   │ 
 │   ├── app.ts                   # Main app setup (express app configuration)
 │   └── server.ts                # Entry point to start the server
